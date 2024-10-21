@@ -17,4 +17,6 @@ document.addEventListener("html"), () => {
         }
     }
     }
-    
+
+// Task 3
+
