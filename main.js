@@ -18,5 +18,16 @@ document.addEventListener("html"), () => {
     }
     }
 
-// Task 3
+// Task 3 on index.html
+// Task 4
+purchaseButton.addEventListener("button", () => {
+    const selectedOption = sizeSelect.selectedOptions[0];
+    const stockStatus = selectedOption.getAttribute("in stock status");
+
+    if (stockStatus === "in-stock") {
+        alert("Thank you!");
+    } else {
+        alert("Sorry, sold out.");
+    }
+});
 
