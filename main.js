@@ -31,3 +31,21 @@ purchaseButton.addEventListener("button", () => {
     }
 });
 
+// Task 5
+const productList = document.getElementById("product list");
+const addProductButton = document.getElementById("add product button");
+
+addProductButton.addEventListener("click", () => {
+    const newProductName = document.getElementById("new product name").value;
+    const newProductPrice = document.getElementById("new product price").value;
+    const newProductSize = document.getElementById("new product size").value;
+
+    const productDiv = document.createElement("div");
+    productDiv.innerHTML = `<h4>${newProductName}</h4><p>$${newProductPrice}</p><button>Purchase</button>`;
+    productList.appendChild(productDiv);
+
+    // Add event listener for purchase button for new product
+    productDiv.querySelector("button").addEventListener("click", () => {
+        alert("Thank you!");
+    });
+});
